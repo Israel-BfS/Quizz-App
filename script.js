@@ -71,7 +71,7 @@ function showQuestion(){
         button.innerHTML = answers.text;
         button.classList.add("btn");
         answerButtons.appendChild(button);
-        if(answerButtons.correct){
+        if(answers.correct){
             button.dataset.correct = answers.correct;
         }
         button.addEventListener("click", selectAnswer);
@@ -112,7 +112,7 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
-    questionElement.innerHTML = 'You scored ${score} out of ${question.length}!';
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`; 
     nextButton.innerHTML = "play Again";
     nextButton.style.display = "block";
 }
@@ -120,7 +120,7 @@ function showScore(){
 function handleNextButton(){
     currentQuestionIndex++;
     if(currentQuestionIndex < questions.length){
-        showQuestion;
+        showQuestion();
     }else{
         showScore();
     }
