@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "Cual es mi color favorito?",
+        question: "Que color me gusta más?",
         answers: [
             {text: "Blanco", correct: false},
             {text: "Azul", correct: false},
@@ -9,7 +9,7 @@ const questions = [
         ]
     },
     {
-        question: "Que musica me gusta?",
+        question: "Que música escucho regularmente?",
         answers: [
             {text: "Pop", correct: false},
             {text: "Rock", correct: false},
@@ -27,21 +27,21 @@ const questions = [
         ]
     },
     {
-        question: "Quieres estar conmigo?",
+        question: "Me extrañas?",
         answers: [
-            {text: "Lo he pensado", correct: false},
+            {text: "Aveces", correct: false},
             {text: "Nel", correct: false},
-            {text: "Obvii", correct: true},
-            {text: "Ya no lo se", correct: false},
+            {text: "Sisi", correct: true},
+            {text: "Quiero hablar con mi abogado", correct: false},
         ]
     },
     {
-        question: "Te volvere a ver?",
+        question: "Quieres vivir conmigo?",
         answers: [
             {text: "Puedes ir olvidandolo", correct: false},
             {text: "Simon", correct: false},
-            {text: "Talvez", correct: false},
-            {text: "Ni idea", correct: true},
+            {text: "Clarooooo....", correct: false},
+            {text: "Cuando me mudo?", correct: true},
         ]
     }
 ];
